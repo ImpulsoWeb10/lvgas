@@ -1,685 +1,314 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LV GÁS — Distribuidora de Gás de Cozinha com Entrega Rápida</title>
-    <meta name="description" content="Distribuidora de gás de cozinha (P13 e P45) com entrega rápida na sua região. Peça pelo WhatsApp com segurança, lacre garantido e atendimento humanizado.">
-    <meta name="keywords" content="distribuidora de gás, gás de cozinha, gás de cozinha perto de mim, entrega de gás, botijão de gás P13, gás P45 comercial, LV Gás">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lvgas.impulsoweb10.com.br/">
-    <meta property="og:title" content="LV GÁS — Distribuidora de Gás de Cozinha com Entrega Rápida">
-    <meta property="og:description" content="Peça seu gás de cozinha residencial ou comercial de forma prática e segura pelo WhatsApp com a LV GÁS.">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Tailwind CSS (CDN) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            red: '#DC2626',
-                            reddark: '#B91C1C',
-                            dark: '#111827',
-                            gray: '#374151',
-                            light: '#F9FAFB',
-                            accent: '#F59E0B'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        heading: ['Poppins', 'sans-serif'],
-                    }
-                }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LV GÁS — Entrega Rápida de Gás e Água em Sorocaba</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Configurações Customizadas do Tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#0047BA',
+              darkblue: '#002D78',
+              orange: '#FF6B00',
+              yellow: '#FFB800',
+              gray: '#F4F6F9'
             }
+          }
         }
-    </script>
-
-    <!-- Schema.org JSON-LD (SEO Local) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "GasStation",
-      "name": "LV GÁS",
-      "@id": "https://lvgas.impulsoweb10.com.br/",
-      "url": "https://lvgas.impulsoweb10.com.br/",
-      "telephone": "+5511999999999",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Estrada Promissão, 950",
-        "addressLocality": "Itaquaquecetuba",
-        "addressRegion": "SP",
-        "postalCode": "08588-310",
-        "addressCountry": "BR"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -23.4862,
-        "longitude": -46.3481
-      },
-      "areaServed": ["Itaquaquecetuba", "Poá", "Suzano", "Mogi das Cruzes", "Ferraz de Vasconcelos", "Arujá"]
+      }
     }
-    </script>
-    <style>
-        .pulse-whatsapp {
-            animation: pulse-ring 2s infinite;
-        }
-        @keyframes pulse-ring {
-            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
-            70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(34, 197, 94, 0); }
-            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
-        }
-    </style>
+  </script>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+<body class="bg-brand-gray text-gray-800 antialiased flex flex-col min-h-screen">
 
-    <script>
-        const CONFIG_EMPRESA = {
-            NOME_EMPRESA: "LV GÁS",
-            SLOGAN: "Distribuidora Oficial de Gás de Cozinha",
-            WHATSAPP_EMPRESA: "5511999999999",
-            TELEFONE_CONTATO: "(11) 99999-9999",
-            ENDERECO_EMPRESA: "Estrada Promissão, 950 - Jardim Carolina",
-            CIDADE: "Itaquaquecetuba",
-            ESTADO: "SP",
-            CEP: "08588-310",
-            HORARIO_SEMANA: "Segunda a Sábado: 08:00 às 20:00",
-            HORARIO_DOMINGO: "Domingos e Feriados: 08:00 às 14:00",
-            CIDADES_ATENDIDAS: [
-                "Itaquaquecetuba", "Poá", "Suzano", "Mogi das Cruzes", "Ferraz de Vasconcelos", "Arujá"
-            ]
-        };
+  <!-- CABEÇALHO / NAVBAR -->
+  <header class="bg-brand-blue text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      
+      <!-- LOGO -->
+      <div class="flex items-center space-x-3">
+        <div class="bg-brand-orange text-white font-black text-2xl px-3 py-1 rounded-lg shadow-inner">
+          LV
+        </div>
+        <div>
+          <span class="text-2xl font-extrabold tracking-wider block leading-none">LV GÁS</span>
+          <span class="text-xs text-blue-200 tracking-wider">REVENDEDOR AUTORIZADO ULTRAGAZ</span>
+        </div>
+      </div>
 
-        const colaboradores = [
-            {
-                id: "joao-silva",
-                nome: "João Silva",
-                funcao: "Entregador Oficial LV GÁS",
-                regiao: "Itaquaquecetuba e Poá",
-                whatsapp: "5511999999991",
-                descricao: "Especialista em entregas ágeis e instalação segura de botijão de cozinha P13 em residências."
-            },
-            {
-                id: "carlos-moraes",
-                nome: "Carlos Moraes",
-                funcao: "Técnico de Instalação e Entrega",
-                regiao: "Suzano e Ferraz de Vasconcelos",
-                whatsapp: "5511999999992",
-                descricao: "Atendimento técnico focado na troca de válvulas, mangueiras normatizadas e teste de vedação."
-            },
-            {
-                id: "marcos-oliveira",
-                nome: "Marcos Oliveira",
-                funcao: "Atendimento Comercial P45",
-                regiao: "Mogi das Cruzes e Arujá",
-                whatsapp: "5511999999993",
-                descricao: "Responsável pelas rotas comerciais de entrega de cilindros P45 para restaurantes, padarias e pizzarias."
-            }
-        ];
-    </script>
+      <!-- BOTÃO WHATSAPP DIRECTO HEADER -->
+      <div>
+        <a href="https://wa.me/5515999999999?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20g%C3%A1s." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="bg-brand-orange hover:bg-orange-600 text-white font-bold px-4 py-2 sm:px-6 sm:py-2.5 rounded-full text-sm sm:text-base flex items-center space-x-2 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 0c-6.627 0-12 5.373-12 12 0 2.159.57 4.26 1.652 6.12l-1.683 6.142 6.284-1.648c1.794.978 3.82 1.492 5.747 1.492 6.627 0 12-5.373 12-12s-5.373-12-12-12zm6.195 16.892c-.259.73-1.289 1.341-2.091 1.512-.551.116-1.272.208-3.693-.794-3.097-1.282-5.093-4.428-5.247-4.633-.153-.205-1.254-1.67-1.254-3.181 0-1.512.791-2.257 1.072-2.563.282-.307.614-.384.819-.384.205 0 .409.001.588.01.189.009.444-.072.693.528.257.621.87 2.122.946 2.276.077.153.128.333.026.537-.103.205-.154.333-.307.512-.153.18-.323.402-.461.539-.153.153-.313.32-.134.627.18.307.8 1.321 1.716 2.138 1.176 1.049 2.168 1.374 2.475 1.528.307.153.486.128.665-.077.18-.205.768-.896.973-1.203.205-.307.41-.256.691-.153.282.103 1.791.844 2.098.998.307.153.512.23.588.358.077.128.077.742-.182 1.472z"/>
+          </svg>
+          <span>Pedir pelo WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
 
-    <!-- HEADER -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#inicio" class="flex items-center gap-3 group">
-                <div class="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center text-white text-2xl font-bold shadow-md shadow-red-200">
-                    <i class="fa-solid fa-fire-flame-curved"></i>
-                </div>
-                <div class="flex flex-col">
-                    <span class="text-2xl font-extrabold tracking-tight text-gray-900 font-heading">LV <span class="text-red-600">GÁS</span></span>
-                    <span class="text-xs text-gray-500 font-medium -mt-1">Distribuidora Oficial</span>
-                </div>
+  <!-- SEÇÃO HERO -->
+  <section class="bg-gradient-to-b from-brand-blue to-brand-darkblue text-white py-12 lg:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+      <!-- TEXTO HERO -->
+      <div>
+        <span class="inline-block bg-brand-orange/20 text-brand-yellow font-semibold px-3 py-1 rounded-full text-sm mb-4 border border-brand-orange/30">
+          🚀 Entrega Rápida em Sorocaba e Região
+        </span>
+        <h1 class="text-4xl sm:text-5xl font-black leading-tight mb-6">
+          Gás de Cozinha e Água Mineral na sua porta com <span class="text-brand-yellow">segurança</span>.
+        </h1>
+        <p class="text-lg text-blue-100 mb-8 max-w-xl">
+          Atendimento agilizado, entrega garantida e botijões revisados pela Ultragaz. Peça direto pelo WhatsApp e receba em minutos!
+        </p>
+
+        <!-- CARACTERÍSTICAS RÁPIDAS -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-blue-400/30 pt-6">
+          <div>
+            <span class="block text-2xl font-bold text-brand-yellow">⏱️ ~20 min</span>
+            <span class="text-xs text-blue-200">Tempo médio de entrega</span>
+          </div>
+          <div>
+            <span class="block text-2xl font-bold text-brand-yellow">💳 Cartão e Pix</span>
+            <span class="text-xs text-blue-200">Aceitamos na entrega</span>
+          </div>
+          <div>
+            <span class="block text-2xl font-bold text-brand-yellow">🛡️ 100% Seguro</span>
+            <span class="text-xs text-blue-200">Revendedor Autorizado</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ILUSTRAÇÃO HERO (IMAGEM WEBP) -->
+      <div class="flex justify-center items-center">
+        <div class="w-full max-w-lg bg-white/5 p-4 sm:p-6 rounded-2xl backdrop-blur-sm border border-white/10 shadow-2xl">
+          <img 
+            src="hero-entregador-p13-triciclo.webp" 
+            alt="Entregador LV Gás com triciclo e botijão P13" 
+            width="1000" 
+            height="800" 
+            class="w-full h-72 sm:h-80 object-contain mx-auto rounded-lg"
+          />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE PRODUTOS -->
+  <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-extrabold text-gray-900">Nossos Produtos</h2>
+      <p class="text-gray-600 mt-2">Escolha o produto ideal para a sua necessidade residencial ou comercial</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- CARD PRODUTO 1: P13 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden flex flex-col border border-gray-100">
+        <div class="p-6 bg-blue-50/50 flex justify-center items-center h-64 border-b border-gray-100">
+          <img 
+            src="produto-botijao-p13.webp" 
+            alt="Botijão de Gás P13 Ultragaz" 
+            width="600" 
+            height="480" 
+            loading="lazy"
+            class="w-full h-full object-contain"
+          />
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-brand-blue uppercase tracking-wider">Uso Residencial</span>
+            <h3 class="text-xl font-bold text-gray-900 mt-1">Botijão de Gás P13 (13kg)</h3>
+            <p class="text-gray-600 text-sm mt-2">
+              O clássico botijão residencial Ultragaz. Ideal para cozinhas de casas e apartamentos. Testado e certificado.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-100">
+            <a href="https://wa.me/5515999999999?text=Ol%C3%A1!%20Quero%20pedir%20um%20Botij%C3%A3o%20P13." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="w-full bg-brand-blue hover:bg-brand-darkblue text-white font-bold py-3 px-4 rounded-xl text-center block transition">
+              Pedir P13 via WhatsApp
             </a>
-
-            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-gray-600">
-                <a href="#inicio" class="hover:text-red-600 transition">Início</a>
-                <a href="#diferenciais" class="hover:text-red-600 transition">Diferenciais</a>
-                <a href="#produtos" class="hover:text-red-600 transition">Produtos</a>
-                <a href="#como-pedir" class="hover:text-red-600 transition">Como Pedir</a>
-                <a href="#equipe" class="hover:text-red-600 transition">Nossa Equipe</a>
-                <a href="#atendimento" class="hover:text-red-600 transition">Região</a>
-                <a href="#faq" class="hover:text-red-600 transition">FAQ</a>
-            </nav>
-
-            <div class="hidden lg:flex items-center gap-4">
-                <a href="#" onclick="abrirWhatsappGlobal('Header')" class="bg-green-600 hover:bg-green-700 text-white font-semibold px-5 py-2.5 rounded-full text-sm flex items-center gap-2 shadow-sm transition">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span>Pedir no WhatsApp</span>
-                </a>
-            </div>
-
-            <button id="mobile-menu-btn" class="md:hidden text-gray-700 text-2xl p-2" aria-label="Abrir Menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+          </div>
         </div>
+      </div>
 
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-6 space-y-3">
-            <a href="#inicio" class="block py-2 text-gray-700 font-medium hover:text-red-600">Início</a>
-            <a href="#diferenciais" class="block py-2 text-gray-700 font-medium hover:text-red-600">Diferenciais</a>
-            <a href="#produtos" class="block py-2 text-gray-700 font-medium hover:text-red-600">Produtos</a>
-            <a href="#como-pedir" class="block py-2 text-gray-700 font-medium hover:text-red-600">Como Pedir</a>
-            <a href="#equipe" class="block py-2 text-gray-700 font-medium hover:text-red-600">Nossa Equipe</a>
-            <a href="#atendimento" class="block py-2 text-gray-700 font-medium hover:text-red-600">Região de Atendimento</a>
-            <a href="#faq" class="block py-2 text-gray-700 font-medium hover:text-red-600">Dúvidas Frequentes</a>
-            <div class="pt-2">
-                <a href="#" onclick="abrirWhatsappGlobal('Menu Mobile')" class="w-full bg-green-600 text-white font-semibold py-3 rounded-xl flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span>Pedir pelo WhatsApp</span>
-                </a>
-            </div>
+      <!-- CARD PRODUTO 2: P45 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden flex flex-col border border-gray-100">
+        <div class="p-6 bg-blue-50/50 flex justify-center items-center h-64 border-b border-gray-100">
+          <img 
+            src="produto-cilindro-p45.webp" 
+            alt="Cilindro de Gás P45 Commercial Ultragaz" 
+            width="600" 
+            height="480" 
+            loading="lazy"
+            class="w-full h-full object-contain"
+          />
         </div>
-    </header>
-
-    <!-- HERO SECTION -->
-    <section id="inicio" class="relative bg-gradient-to-br from-gray-900 via-gray-800 to-red-950 text-white overflow-hidden py-16 lg:py-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
-                
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 bg-red-600/30 border border-red-500/40 text-red-300 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full">
-                        <i class="fa-solid fa-truck-fast"></i>
-                        <span>ENTREGA RÁPIDA E SEGURA NA SUA REGIÃO</span>
-                    </div>
-
-                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight font-heading">
-                        LV GÁS — <span class="text-red-500">GÁS DE COZINHA</span> COM ENTREGA RÁPIDA
-                    </h1>
-
-                    <p class="text-lg sm:text-xl text-gray-300 max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
-                        Peça seu gás de forma rápida, segura e prática. Fale diretamente com a equipe <strong class="text-white">LV GÁS</strong> pelo WhatsApp e receba no seu endereço.
-                    </p>
-
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-                        <a href="#" onclick="abrirWhatsappGlobal('Hero Button')" class="bg-green-600 hover:bg-green-500 text-white font-bold text-base px-8 py-4 rounded-xl shadow-lg shadow-green-900/30 flex items-center justify-center gap-3 transition transform hover:-translate-y-0.5">
-                            <i class="fa-brands fa-whatsapp text-2xl"></i>
-                            <span>PEDIR PELO WHATSAPP</span>
-                        </a>
-                        <a href="#equipe" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold text-base px-8 py-4 rounded-xl flex items-center justify-center gap-3 backdrop-blur-sm transition">
-                            <i class="fa-solid fa-users"></i>
-                            <span>CONHEÇA NOSSA EQUIPE</span>
-                        </a>
-                    </div>
-
-                    <div class="pt-8 border-t border-gray-800 grid grid-cols-3 gap-4 text-center sm:text-left">
-                        <div>
-                            <span class="block text-2xl sm:text-3xl font-extrabold text-red-500">~30 min</span>
-                            <span class="text-xs sm:text-sm text-gray-400">Tempo médio de entrega</span>
-                        </div>
-                        <div>
-                            <span class="block text-2xl sm:text-3xl font-extrabold text-white">100%</span>
-                            <span class="text-xs sm:text-sm text-gray-400">Lacrado e Certificado ANP</span>
-                        </div>
-                        <div>
-                            <span class="block text-2xl sm:text-3xl font-extrabold text-yellow-400">4.9 ★</span>
-                            <span class="text-xs sm:text-sm text-gray-400">Avaliação da Região</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- NOVO VETOR SEMÂNTICO HERO: ENTREGADOR DE GÁS + BOTIJÃO P13 + MOTOCICLETA/TRICICLO DE ENTREGA -->
-                <div class="lg:col-span-5 relative">
-                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 bg-gray-800 p-6 flex flex-col items-center text-center">
-                        <svg class="w-full h-72 sm:h-80" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Fundo de Fachada Residencial -->
-                            <rect x="50" y="100" width="400" height="250" rx="10" fill="#1F2937" />
-                            <rect x="210" y="180" width="80" height="170" rx="4" fill="#374151" />
-                            <!-- Triciclo/Moto de Entrega com Carga de Gás -->
-                            <rect x="70" y="240" width="120" height="90" rx="8" fill="#DC2626" />
-                            <circle cx="90" cy="330" r="25" fill="#111827" />
-                            <circle cx="170" cy="330" r="25" fill="#111827" />
-                            <!-- Botijões na gaiola do veículo -->
-                            <rect x="80" y="200" width="30" height="40" rx="8" fill="#2563EB" />
-                            <rect x="115" y="200" width="30" height="40" rx="8" fill="#2563EB" />
-                            <rect x="150" y="200" width="30" height="40" rx="8" fill="#2563EB" />
-                            <!-- Entregador Uniformizado Segurando o Botijão P13 na Porta -->
-                            <circle cx="330" cy="180" r="22" fill="#FCA5A5" /> <!-- Cabeça com boné -->
-                            <path d="M310 165 L350 165 L345 180 L315 180 Z" fill="#DC2626" /> <!-- Boné Vermelho -->
-                            <path d="M300 205 Q330 195 360 205 L355 280 L305 280 Z" fill="#DC2626" /> <!-- Uniforme LV Gás -->
-                            <!-- Botijão P13 Cinza/Azul na Mão do Entregador -->
-                            <rect x="340" y="220" width="55" height="75" rx="18" fill="#3B82F6" />
-                            <rect x="355" y="210" width="25" height="10" rx="3" fill="#1D4ED8" /> <!-- Alça -->
-                            <circle cx="367" cy="215" r="3" fill="#EF4444" /> <!-- Lacre de Segurança -->
-                            <!-- Texto Descritivo no Vetor -->
-                            <text x="250" y="60" fill="#FFFFFF" font-size="20" font-weight="bold" text-anchor="middle">ENTREGA DIRETA NA SUA PORTA</text>
-                        </svg>
-                        
-                        <div class="mt-4 bg-white/95 backdrop-blur-md p-4 rounded-xl text-gray-900 shadow-lg border border-white text-left w-full flex items-center gap-4">
-                            <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center text-white shrink-0">
-                                <i class="fa-solid fa-shield-halved text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-sm">Segurança em Primeiro Lugar</h3>
-                                <p class="text-xs text-gray-600">Botijões revisados, pesados e lacrados da distribuidora autorizada.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-brand-orange uppercase tracking-wider">Comercial / Condomínios</span>
+            <h3 class="text-xl font-bold text-gray-900 mt-1">Cilindro P45 (45kg)</h3>
+            <p class="text-gray-600 text-sm mt-2">
+              Maior capacidade e vazão contínua. Excelente para restaurantes, padarias, lanchonetes e centrais de gás.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-100">
+            <a href="https://wa.me/5515999999999?text=Ol%C3%A1!%20Quero%20pedir%20um%20Cilindro%20P45." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="w-full bg-brand-blue hover:bg-brand-darkblue text-white font-bold py-3 px-4 rounded-xl text-center block transition">
+              Pedir P45 via WhatsApp
+            </a>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- DIFERENCIAIS -->
-    <section id="diferenciais" class="py-16 lg:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-red-600 font-bold uppercase tracking-wider text-sm">Nossos Diferenciais</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 font-heading mt-2">
-                    Por que escolher a LV GÁS?
-                </h2>
-                <p class="text-gray-600 mt-4 text-base sm:text-lg">
-                    Trabalhamos diariamente para oferecer o melhor atendimento, agilidade e total segurança para a sua casa ou comércio.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-red-200 hover:shadow-lg transition">
-                    <div class="w-14 h-14 bg-red-100 text-red-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6">
-                        <i class="fa-solid fa-truck-fast"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Entrega Rápida</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Agilidade na rota de entrega para você não ficar na mão no meio do preparo das suas refeições.
-                    </p>
-                </div>
-
-                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-red-200 hover:shadow-lg transition">
-                    <div class="w-14 h-14 bg-green-100 text-green-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Pedido pelo WhatsApp</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Solicite seu gás de forma simples, direta e prática sem complicações ou esperas ao telefone.
-                    </p>
-                </div>
-
-                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-red-200 hover:shadow-lg transition">
-                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6">
-                        <i class="fa-solid fa-shield-check"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Segurança e Confiança</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Profissionais devidamente preparados para realizar a instalação segura do seu botijão.
-                    </p>
-                </div>
-
-                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-red-200 hover:shadow-lg transition">
-                    <div class="w-14 h-14 bg-yellow-100 text-yellow-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6">
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Atendimento de Qualidade</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Nosso maior objetivo é proporcionar uma excelente experiência do primeiro contato à entrega.
-                    </p>
-                </div>
-
-                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-red-200 hover:shadow-lg transition">
-                    <div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Atendimento Local</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Conhecemos os bairros e a região detalhadamente para garantir pontualidade e rapidez.
-                    </p>
-                </div>
-
-                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-red-200 hover:shadow-lg transition">
-                    <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6">
-                        <i class="fa-solid fa-headset"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Atendimento Humanizado</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Fale diretamente com pessoas reais da nossa equipe, prontas para responder qualquer dúvida.
-                    </p>
-                </div>
-            </div>
+      <!-- CARD PRODUTO 3: REGULADOR & MANGUEIRA -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden flex flex-col border border-gray-100">
+        <div class="p-6 bg-blue-50/50 flex justify-center items-center h-64 border-b border-gray-100">
+          <img 
+            src="produto-regulador-mangueira.webp" 
+            alt="Kit Regulador e Mangueira de Gás Selo INMETRO" 
+            width="600" 
+            height="480" 
+            loading="lazy"
+            class="w-full h-full object-contain"
+          />
         </div>
-    </section>
-
-    <!-- PRODUTOS COM ILUSTRAÇÕES TÉCNICAS E ILUSTRATIVAS DE EXATA CORRESPONDÊNCIA SEMÂNTICA -->
-    <section id="produtos" class="py-16 lg:py-24 bg-gray-50 border-t border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-red-600 font-bold uppercase tracking-wider text-sm">Catálogo</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 font-heading mt-2">
-                    Nossos Produtos e Soluções
-                </h2>
-                <p class="text-gray-600 mt-4 text-base sm:text-lg">
-                    Gás de cozinha para residências, condomínios e estabelecimentos comerciais com garantia de procedência.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- PRODUTO 1: BOTIJÃO P13 RESIDENCIAL -->
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200 flex flex-col justify-between hover:shadow-md transition">
-                    <div>
-                        <div class="relative h-64 bg-slate-100 flex items-center justify-center p-4">
-                            <svg class="w-full h-full" viewBox="0 0 300 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <!-- Botijão P13 Padronizado -->
-                                <rect x="90" y="50" width="120" height="150" rx="35" fill="#2563EB" />
-                                <rect x="120" y="30" width="60" height="20" rx="6" fill="#1E40AF" />
-                                <rect x="135" y="20" width="30" height="10" rx="2" fill="#9CA3AF" />
-                                <!-- Lacre Vermelho da LV GÁS -->
-                                <circle cx="150" cy="30" r="6" fill="#DC2626" />
-                                <!-- Rótulo P13 -->
-                                <rect x="105" y="100" width="90" height="40" rx="4" fill="#FFFFFF" />
-                                <text x="150" y="125" fill="#DC2626" font-size="18" font-weight="bold" text-anchor="middle">GÁS P13</text>
-                            </svg>
-                            <span class="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase shadow">Mais Pedido</span>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-2xl font-bold text-gray-900 font-heading">Gás de Cozinha P13</h3>
-                            <p class="text-sm font-semibold text-red-600 mb-3">Uso Residencial Convencional (13kg)</p>
-                            <p class="text-gray-600 text-sm leading-relaxed">
-                                O tradicional botijão para casas e apartamentos. Ideal para o preparo diário do seu alimento com máxima durabilidade.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="p-6 pt-0 border-t border-gray-100 mt-4 flex items-center justify-between">
-                        <span class="text-xs font-medium text-gray-500"><i class="fa-solid fa-circle-check text-green-600 mr-1"></i> Lacrado & Pesado</span>
-                        <a href="#" onclick="abrirWhatsappProduto('Gás de Cozinha P13 (13kg)')" class="bg-green-600 hover:bg-green-700 text-white text-sm font-bold px-4 py-2.5 rounded-xl flex items-center gap-2 transition">
-                            <i class="fa-brands fa-whatsapp"></i> PEDIR AGORA
-                        </a>
-                    </div>
-                </div>
-
-                <!-- PRODUTO 2: CILINDRO P45 COMERCIAL -->
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200 flex flex-col justify-between hover:shadow-md transition">
-                    <div>
-                        <div class="relative h-64 bg-slate-100 flex items-center justify-center p-4">
-                            <svg class="w-full h-full" viewBox="0 0 300 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <!-- Cilindro P45 Alto -->
-                                <rect x="110" y="20" width="80" height="190" rx="15" fill="#475569" />
-                                <rect x="130" y="10" width="40" height="12" rx="3" fill="#1E293B" />
-                                <circle cx="150" cy="16" r="4" fill="#DC2626" />
-                                <!-- Rótulo P45 Comercial -->
-                                <rect x="120" y="80" width="60" height="60" rx="4" fill="#FFFFFF" />
-                                <text x="150" y="108" fill="#1E293B" font-size="16" font-weight="bold" text-anchor="middle">P45</text>
-                                <text x="150" y="125" fill="#DC2626" font-size="10" font-weight="bold" text-anchor="middle">COMERCIAL</text>
-                            </svg>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-2xl font-bold text-gray-900 font-heading">Gás Comercial P45</h3>
-                            <p class="text-sm font-semibold text-red-600 mb-3">Uso Comercial e Industrial (45kg)</p>
-                            <p class="text-gray-600 text-sm leading-relaxed">
-                                Cilindro de grande capacidade projetado para restaurantes, lanchonetes, padarias, pizzarias e condomínios.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="p-6 pt-0 border-t border-gray-100 mt-4 flex items-center justify-between">
-                        <span class="text-xs font-medium text-gray-500"><i class="fa-solid fa-circle-check text-green-600 mr-1"></i> Alta Vazão</span>
-                        <a href="#" onclick="abrirWhatsappProduto('Gás Comercial P45 (45kg)')" class="bg-green-600 hover:bg-green-700 text-white text-sm font-bold px-4 py-2.5 rounded-xl flex items-center gap-2 transition">
-                            <i class="fa-brands fa-whatsapp"></i> PEDIR AGORA
-                        </a>
-                    </div>
-                </div>
-
-                <!-- PRODUTO 3: REGULADOR E MANGUEIRA INMETRO -->
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200 flex flex-col justify-between hover:shadow-md transition">
-                    <div>
-                        <div class="relative h-64 bg-slate-100 flex items-center justify-center p-4">
-                            <svg class="w-full h-full" viewBox="0 0 300 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <!-- Mangueira de Gás Amarela Normatizada -->
-                                <path d="M50 150 Q120 220 200 150 T280 80" stroke="#F59E0B" stroke-width="18" fill="none" stroke-linecap="round" />
-                                <!-- Válvula / Regulador de Pressão de Gás com Click -->
-                                <circle cx="80" cy="130" r="30" fill="#9CA3AF" />
-                                <circle cx="80" cy="130" r="18" fill="#4B5563" />
-                                <rect x="65" y="122" width="30" height="16" rx="3" fill="#DC2626" /> <!-- Borboleta do Click -->
-                                <!-- Selo INMETRO -->
-                                <rect x="180" y="40" width="70" height="40" rx="4" fill="#2563EB" />
-                                <text x="215" y="65" fill="#FFFFFF" font-size="10" font-weight="bold" text-anchor="middle">INMETRO</text>
-                            </svg>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-2xl font-bold text-gray-900 font-heading">Reguladores e Mangueiras</h3>
-                            <p class="text-sm font-semibold text-red-600 mb-3">Acessórios de Segurança Comprobatória</p>
-                            <p class="text-gray-600 text-sm leading-relaxed">
-                                Mangueiras normatizadas e reguladores de pressão com validade em dia e selo de aprovação do INMETRO.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="p-6 pt-0 border-t border-gray-100 mt-4 flex items-center justify-between">
-                        <span class="text-xs font-medium text-gray-500"><i class="fa-solid fa-shield-check text-green-600 mr-1"></i> Certificado Inmetro</span>
-                        <a href="#" onclick="abrirWhatsappProduto('Regulador e Mangueira de Gás')" class="bg-green-600 hover:bg-green-700 text-white text-sm font-bold px-4 py-2.5 rounded-xl flex items-center gap-2 transition">
-                            <i class="fa-brands fa-whatsapp"></i> PEDIR AGORA
-                        </a>
-                    </div>
-                </div>
-
-            </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-green-600 uppercase tracking-wider">Segurança e Acessórios</span>
+            <h3 class="text-xl font-bold text-gray-900 mt-1">Regulador e Mangueira</h3>
+            <p class="text-gray-600 text-sm mt-2">
+              Kits normatizados pelo INMETRO para substituição periódica. Garantia de estanqueidade e segurança para sua família.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-100">
+            <a href="https://wa.me/5515999999999?text=Ol%C3%A1!%20Quero%20consultar%20sobre%20Regulador%20e%20Mangueira." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="w-full bg-brand-blue hover:bg-brand-darkblue text-white font-bold py-3 px-4 rounded-xl text-center block transition">
+              Consultar Acessórios
+            </a>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- COMO PEDIR -->
-    <section id="como-pedir" class="py-16 lg:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-red-600 font-bold uppercase tracking-wider text-sm">Passo a Passo</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 font-heading mt-2">
-                    Como pedir seu gás de cozinha
-                </h2>
-                <p class="text-gray-600 mt-4 text-base sm:text-lg">
-                    Em apenas 3 passos simples você garante seu botijão entregue à sua porta.
-                </p>
-            </div>
+    </div>
+  </section>
 
-            <div class="grid md:grid-cols-3 gap-8 text-center relative">
-                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 relative">
-                    <div class="w-16 h-16 bg-red-600 text-white rounded-2xl flex items-center justify-center text-2xl font-extrabold mx-auto mb-6 shadow-md shadow-red-200">
-                        1
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Clique no WhatsApp</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Toque em qualquer botão do site para iniciar a conversa direta com nossos atendentes ou entregadores.
-                    </p>
-                </div>
+  <!-- SEÇÃO DE EQUIPE (RENDERIZADA DINAMICAMENTE VIA JAVASCRIPT COM FOTOS WEBP) -->
+  <section class="bg-white py-16 border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-extrabold text-gray-900">Nossa Equipe de Entregas</h2>
+        <p class="text-gray-600 mt-2">Profissionais treinados, uniformizados e prontos para atender você com agilidade</p>
+      </div>
 
-                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 relative">
-                    <div class="w-16 h-16 bg-red-600 text-white rounded-2xl flex items-center justify-center text-2xl font-extrabold mx-auto mb-6 shadow-md shadow-red-200">
-                        2
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Informe seu Endereço</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Passe os dados da entrega, o tipo de produto desejado e sua forma de pagamento preferida.
-                    </p>
-                </div>
+      <!-- CONTAINER ONDE O JAVASCRIPT INSERIRÁ OS CARDS -->
+      <div id="grid-equipe" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
 
-                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 relative">
-                    <div class="w-16 h-16 bg-red-600 text-white rounded-2xl flex items-center justify-center text-2xl font-extrabold mx-auto mb-6 shadow-md shadow-red-200">
-                        3
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Receba seu Gás</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Nossa equipe realiza a entrega rápida na sua residência ou empresa com total comodidade.
-                    </p>
-                </div>
-            </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-gray-900 text-gray-300 py-8 mt-auto border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 text-sm">
+      <div>
+        <p class="font-bold text-white">LV GÁS — Revendedor Autorizado Ultragaz</p>
+        <p class="text-xs text-gray-400 mt-0.5">Atendendo Sorocaba e Região com excelência.</p>
+      </div>
+      <div class="text-center sm:text-right text-xs text-gray-500">
+        <p>&copy; 2026 LV GÁS. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT DINÂMICO DA EQUIPE -->
+  <script>
+    // ARRAY DA EQUIPE COM AS FOTOS WEBP DEDICADAS
+    const equipe = [
+      {
+        nome: "João Silva",
+        cargo: "Entregador Especialista",
+        experiencia: "5 anos na LV GÁS",
+        regiao: "Zona Norte / Centro",
+        foto: "avatar-equipe-joao.webp"
+      },
+      {
+        nome: "Carlos Oliveira",
+        cargo: "Entregador e Técnico",
+        experiencia: "3 anos na LV GÁS",
+        regiao: "Zona Sul / Campolim",
+        foto: "avatar-equipe-carlos.webp"
+      },
+      {
+        nome: "Marcos Souza",
+        cargo: "Entregador Rápido",
+        experiencia: "4 anos na LV GÁS",
+        regiao: "Zona Leste / Éden",
+        foto: "avatar-equipe-marcos.webp"
+      }
+    ];
+
+    // FUNÇÃO PARA RENDERIZAR OS CARDS DA EQUIPE
+    function renderizarEquipe() {
+      const container = document.getElementById("grid-equipe");
+      if (!container) return;
+
+      container.innerHTML = equipe.map(membro => `
+        <div class="bg-brand-gray rounded-2xl p-6 text-center shadow-sm border border-gray-200/80 hover:shadow-md transition">
+          <div class="w-full h-48 bg-blue-100/60 rounded-xl flex items-center justify-center mb-4 overflow-hidden">
+            <img 
+              src="${membro.foto}" 
+              alt="Foto do colaborador ${membro.nome}" 
+              width="384" 
+              height="384" 
+              loading="lazy"
+              class="w-32 h-32 rounded-full object-cover shadow-sm border-2 border-white"
+            />
+          </div>
+          <h3 class="text-xl font-bold text-gray-900">${membro.nome}</h3>
+          <p class="text-brand-blue font-semibold text-sm mt-0.5">${membro.cargo}</p>
+          
+          <div class="mt-4 pt-4 border-t border-gray-200/60 space-y-1 text-xs text-gray-600">
+            <p><span class="font-bold text-gray-700">Tempo de casa:</span> ${membro.experiencia}</p>
+            <p><span class="font-bold text-gray-700">Atuação:</span> ${membro.regiao}</p>
+          </div>
         </div>
-    </section>
+      `).join('');
+    }
 
-    <!-- EQUIPE (CARDS GERADOS VIA JS COM AVATARES TÉCNICOS) -->
-    <section id="equipe" class="py-16 lg:py-24 bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-red-500 font-bold uppercase tracking-wider text-sm">Atendimento Humanizado</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold font-heading mt-2">
-                    Conheça Nossa Equipe
-                </h2>
-                <p class="text-gray-400 mt-4 text-base sm:text-lg">
-                    Por trás de cada entrega existe uma equipe preparada para atender você. Conheça alguns dos profissionais que fazem parte da <strong>LV GÁS</strong>.
-                </p>
-            </div>
-
-            <div id="container-colaboradores" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Gerado via JS -->
-            </div>
-        </div>
-    </section>
-
-    <!-- ATENDIMENTO E REGIÃO -->
-    <section id="atendimento" class="py-16 lg:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
-                
-                <div class="lg:col-span-6 space-y-6">
-                    <span class="text-red-600 font-bold uppercase tracking-wider text-sm">Cobertura de Entrega</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 font-heading">
-                        Atendemos Sua Região
-                    </h2>
-                    <p class="text-gray-600 text-base leading-relaxed">
-                        Temos rotas otimizadas para garantir a menor entrega do mercado. Confira algumas das cidades e regiões atendidas pela nossa frota:
-                    </p>
-
-                    <div id="lista-cidades" class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2"></div>
-
-                    <div class="bg-gray-50 border-l-4 border-red-600 p-4 rounded-r-xl mt-6 flex items-start gap-3">
-                        <i class="fa-solid fa-circle-info text-red-600 text-xl mt-0.5"></i>
-                        <div>
-                            <strong class="text-gray-900 text-sm block">Não encontrou seu bairro?</strong>
-                            <p class="text-xs text-gray-600">Consulte a disponibilidade e o tempo de entrega para o seu endereço diretamente via WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-6">
-                    <div class="bg-gray-900 text-white p-8 rounded-3xl shadow-xl space-y-6">
-                        <h3 class="text-2xl font-bold font-heading">Consulte sua Região Agora</h3>
-                        <p class="text-sm text-gray-300">Digite seu bairro ou cidade abaixo para verificar o atendimento imediato:</p>
-                        <div class="space-y-4">
-                            <input type="text" id="input-busca-bairro" placeholder="Digite seu bairro ex: Jardim Carolina" class="w-full px-4 py-3.5 rounded-xl text-gray-900 bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600 text-sm">
-                            <button onclick="buscarBairroLocal()" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3.5 rounded-xl transition flex items-center justify-center gap-2">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                                <span>Verificar Disponibilidade</span>
-                            </button>
-                        </div>
-                        <div id="resultado-busca-bairro" class="hidden p-4 rounded-xl text-sm font-medium"></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="py-16 lg:py-24 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <span class="text-red-600 font-bold uppercase tracking-wider text-sm">Tire suas Dúvidas</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 font-heading mt-2">Perguntas Frequentes</h2>
-            </div>
-
-            <div class="space-y-4" id="faq-accordion">
-                <div class="border border-gray-200 rounded-xl overflow-hidden">
-                    <button class="w-full p-5 text-left font-bold text-gray-900 flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition" onclick="toggleFaq(this)">
-                        <span>Como faço para pedir gás de cozinha pelo WhatsApp?</span>
-                        <i class="fa-solid fa-chevron-down text-gray-500 transition-transform"></i>
-                    </button>
-                    <div class="p-5 text-gray-600 text-sm leading-relaxed hidden bg-white border-t border-gray-200">
-                        É muito simples! Basta clicar em qualquer botão de WhatsApp nesta página, enviar uma mensagem informando seu endereço completo e a quantidade desejada.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-gray-950 text-gray-400 py-12 border-t border-gray-800 text-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
-            <p>&copy; <span id="ano-atual"></span> LV GÁS — Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
-    <a href="#" onclick="abrirWhatsappGlobal('Botao Flutuante')" aria-label="Atendimento via WhatsApp" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl transition pulse-whatsapp">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("ano-atual").textContent = new Date().getFullYear();
-
-            const listaCidadesContainer = document.getElementById("lista-cidades");
-            listaCidadesContainer.innerHTML = CONFIG_EMPRESA.CIDADES_ATENDIDAS.map(cidade => `
-                <div class="bg-gray-100 text-gray-800 text-xs font-semibold px-3 py-2 rounded-lg flex items-center gap-2">
-                    <i class="fa-solid fa-location-dot text-red-600"></i>
-                    <span>${cidade}</span>
-                </div>
-            `).join('');
-
-            renderizarColaboradores();
-        });
-
-        function renderizarColaboradores() {
-            const container = document.getElementById("container-colaboradores");
-            container.innerHTML = colaboradores.map(colab => `
-                <div class="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 flex flex-col justify-between hover:border-red-500 transition duration-300">
-                    <div>
-                        <div class="h-48 bg-slate-800 flex items-center justify-center p-4">
-                            <svg class="w-32 h-32" viewBox="0 0 100 100" fill="none">
-                                <circle cx="50" cy="40" r="25" fill="#DC2626" />
-                                <circle cx="50" cy="35" r="10" fill="#FCA5A5" />
-                                <path d="M20 90 Q50 60 80 90 Z" fill="#374151" />
-                            </svg>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-white font-heading">${colab.nome}</h3>
-                            <p class="text-xs font-semibold text-red-400 mb-3">${colab.funcao}</p>
-                            <p class="text-gray-300 text-sm italic leading-relaxed">"${colab.descricao}"</p>
-                        </div>
-                    </div>
-                    <div class="p-6 pt-0">
-                        <button onclick="abrirWhatsappColaborador('${colab.whatsapp}', '${colab.nome}')" class="w-full bg-green-600 hover:bg-green-700 text-white text-sm font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>FALAR COM ESTE COLABORADOR</span>
-                        </button>
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        function abrirWhatsappGlobal(origem) {
-            const mensagem = encodeURIComponent(`Olá! Vim pelo site da LV GÁS (${origem}) e gostaria de pedir um gás de cozinha.`);
-            window.open(`https://wa.me/${CONFIG_EMPRESA.WHATSAPP_EMPRESA}?text=${mensagem}`, '_blank');
-        }
-
-        function abrirWhatsappProduto(nomeProduto) {
-            const mensagem = encodeURIComponent(`Olá! Gostaria de fazer o pedido do produto: ${nomeProduto}.`);
-            window.open(`https://wa.me/${CONFIG_EMPRESA.WHATSAPP_EMPRESA}?text=${mensagem}`, '_blank');
-        }
-
-        function abrirWhatsappColaborador(numero, nomeColaborador) {
-            const mensagem = encodeURIComponent(`Olá ${nomeColaborador}! Encontrei seu contato no site da LV GÁS.`);
-            window.open(`https://wa.me/${numero}?text=${mensagem}`, '_blank');
-        }
-
-        function buscarBairroLocal() {
-            const input = document.getElementById("input-busca-bairro").value.trim();
-            const boxResultado = document.getElementById("resultado-busca-bairro");
-            if (!input) return;
-
-            boxResultado.className = "p-4 rounded-xl text-sm font-medium bg-green-500/20 text-green-200 border border-green-500/30";
-            boxResultado.innerHTML = `Atendemos o bairro <strong>"${input}"</strong> com entrega expressa! <br><button onclick="abrirWhatsappGlobal('Busca Bairro - ${input}')" class="mt-3 bg-green-600 text-white font-bold px-4 py-2 rounded-lg text-xs">Pedir no WhatsApp Agora</button>`;
-            boxResultado.classList.remove("hidden");
-        }
-
-        function toggleFaq(button) {
-            const content = button.nextElementSibling;
-            content.classList.toggle("hidden");
-        }
-    </script>
+    // EXECUTAR A RENDERIZAÇÃO
+    document.addEventListener("DOMContentLoaded", renderizarEquipe);
+  </script>
 </body>
 </html>
