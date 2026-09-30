@@ -103,14 +103,12 @@
         </div>
       </div>
 
-      <!-- ILUSTRAÇÃO HERO (IMAGEM WEBP) -->
+      <!-- IMAGEM HERO WEBP -->
       <div class="flex justify-center items-center">
         <div class="w-full max-w-lg bg-white/5 p-4 sm:p-6 rounded-2xl backdrop-blur-sm border border-white/10 shadow-2xl">
           <img 
             src="hero-entregador-p13-triciclo.webp" 
             alt="Entregador LV Gás com triciclo e botijão P13" 
-            width="1000" 
-            height="800" 
             class="w-full h-72 sm:h-80 object-contain mx-auto rounded-lg"
           />
         </div>
@@ -134,9 +132,6 @@
           <img 
             src="produto-botijao-p13.webp" 
             alt="Botijão de Gás P13 Ultragaz" 
-            width="600" 
-            height="480" 
-            loading="lazy"
             class="w-full h-full object-contain"
           />
         </div>
@@ -165,9 +160,6 @@
           <img 
             src="produto-cilindro-p45.webp" 
             alt="Cilindro de Gás P45 Commercial Ultragaz" 
-            width="600" 
-            height="480" 
-            loading="lazy"
             class="w-full h-full object-contain"
           />
         </div>
@@ -196,9 +188,6 @@
           <img 
             src="produto-regulador-mangueira.webp" 
             alt="Kit Regulador e Mangueira de Gás Selo INMETRO" 
-            width="600" 
-            height="480" 
-            loading="lazy"
             class="w-full h-full object-contain"
           />
         </div>
@@ -224,7 +213,7 @@
     </div>
   </section>
 
-  <!-- SEÇÃO DE EQUIPE (RENDERIZADA DINAMICAMENTE VIA JAVASCRIPT COM FOTOS WEBP) -->
+  <!-- SEÇÃO DE EQUIPE (RENDERIZADA DINAMICAMENTE VIA JAVASCRIPT) -->
   <section class="bg-white py-16 border-t border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -252,30 +241,30 @@
     </div>
   </footer>
 
-  <!-- SCRIPT DINÂMICO DA EQUIPE -->
+  <!-- SCRIPT DINÂMICO DA EQUIPE COM IMAGENS WEBP INDIVIDUAIS -->
   <script>
-    // ARRAY DA EQUIPE COM AS FOTOS WEBP DEDICADAS
+    // ARRAY DA EQUIPE ATUALIZADO COM OS CAMINHOS DAS IMAGENS WEBP
     const equipe = [
       {
         nome: "João Silva",
         cargo: "Entregador Especialista",
         experiencia: "5 anos na LV GÁS",
         regiao: "Zona Norte / Centro",
-        foto: "avatar-equipe-joao.webp"
+        imagem: "avatar-equipe-joao.webp"
       },
       {
         nome: "Carlos Oliveira",
         cargo: "Entregador e Técnico",
         experiencia: "3 anos na LV GÁS",
         regiao: "Zona Sul / Campolim",
-        foto: "avatar-equipe-carlos.webp"
+        imagem: "avatar-equipe-carlos.webp"
       },
       {
         nome: "Marcos Souza",
         cargo: "Entregador Rápido",
         experiencia: "4 anos na LV GÁS",
         regiao: "Zona Leste / Éden",
-        foto: "avatar-equipe-marcos.webp"
+        imagem: "avatar-equipe-marcos.webp"
       }
     ];
 
@@ -288,11 +277,8 @@
         <div class="bg-brand-gray rounded-2xl p-6 text-center shadow-sm border border-gray-200/80 hover:shadow-md transition">
           <div class="w-full h-48 bg-blue-100/60 rounded-xl flex items-center justify-center mb-4 overflow-hidden">
             <img 
-              src="${membro.foto}" 
+              src="${membro.imagem}" 
               alt="Foto do colaborador ${membro.nome}" 
-              width="384" 
-              height="384" 
-              loading="lazy"
               class="w-32 h-32 rounded-full object-cover shadow-sm border-2 border-white"
             />
           </div>
@@ -307,7 +293,7 @@
       `).join('');
     }
 
-    // EXECUTAR A RENDERIZAÇÃO
+    // EXECUTAR A RENDERIZAÇÃO QUANDO O DOM ESTIVER PRONTO
     document.addEventListener("DOMContentLoaded", renderizarEquipe);
   </script>
 </body>
